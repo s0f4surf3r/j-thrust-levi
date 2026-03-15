@@ -1343,7 +1343,7 @@ let ws=null,duelOpStates=[],duelSendTimer=0,duelName='';
 try{duelName=localStorage.getItem('duelName')||'';}catch(e){}
 let duelServerUrl='';
 try{duelServerUrl=localStorage.getItem('duelServer')||'';}catch(e){}
-let duelUrlInput=duelServerUrl||'wss://j-thrust-duel.onrender.com',duelUrlCursor=true,duelIsOnline=false;
+let duelUrlInput=duelServerUrl||'ws://192.168.1.25:8080',duelUrlCursor=true,duelIsOnline=false;
 let duelCountdown=0,duelDisconnected=false,duelMenuSel=0,duelConnectField=0;
 const DUEL_MAPS=[
   {n:'THE PIT',
